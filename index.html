@@ -1,114 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANNED</title>
-  <style>
-    /* Basic CSS styling */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
-      overflow: hidden;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    .ban-notice {
-      padding: 20px;
-      border: 2px solid #ff0000;
-      border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-    .warning-icon {
-      width: 50px;
-      height: 50px;
-      margin: 0 auto 20px;
-    }
-    .glitch-title {
-      font-size: 3rem;
-      color: #ff5555;
-      margin-bottom: 10px;
-    }
-    .ban-details {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    .error-code {
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .retry-button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      cursor: pointer;
-      background-color: #ff5555;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    .retry-button:hover {
-      background-color: #ff0000;
-    }
-    .particles {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      /* Sample background effect */
-      background: radial-gradient(circle, rgba(255,0,0,0.2), transparent);
-    }
-  </style>
-  <script>
-    // Boolean flag to determine if audio should play
-    const shouldPlayAudio = true;
-    
-    if (shouldPlayAudio) {
-      window.addEventListener('load', () => {
-        const audio = new Audio('BANNED.mp3');
-        // Attempt to play the audio when the page loads
-        audio.play().catch(error => console.error('Audio playback failed:', error));
-      });
-    }
-  </script>
-</head>
-<body>
-  <div class="container">
-    <div class="ban-notice">
-      <div class="warning-icon">
-        <svg viewBox="0 0 24 24" class="warning-svg">
-          <path d="M12 2L1 21h22L12 2zm0 4l7.5 13h-15L12 6z"></path>
-          <path d="M11 10h2v5h-2zm0 6h2v2h-2z"></path>
-        </svg>
-      </div>
-      <div class="glitch-title" data-text="BANNED!">BANNED!</div>
-      <div class="ban-details">
-        <p>Your access to HAPSWAD has been revoked.</p>
-        <p>Violation: Terms of Service breach detected.</p>
-      </div>
-      <div class="error-code">Error Code: BN-7734</div>
-      <button class="retry-button">
-        <span class="button-text">RETRY</span>
-        <span class="button-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div class="particles"></div>
-</body>
-</html>
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>𝐁𝐀𝐍𝐍𝐄𝐃</title>
+     <link rel="stylesheet" href="styles.css">
+     <script src="script.js" defer></script>
+ </head>
+ <body>
+     <div class="container">
+         <div class="ban-notice">
+             <div class="warning-icon">
+                 <svg viewBox="0 0 24 24" class="warning-svg">
+                     <path d="M12 2L1 21h22L12 2zm0 4l7.5 13h-15L12 6z"></path>
+                     <path d="M11 10h2v5h-2zm0 6h2v2h-2z"></path>
+                 </svg>
+             </div>
+             <div class="glitch-title" data-text="ACCESS REVOKED">ACCESS REVOKED</div>
+             <div class="glitch-title" data-text="BANNED!">BANNED!</div>
+             <div class="ban-details">
+                 <p>Your access to HAPSWAD has been revoked.</p>
+                 <p>Violation: Terms of Service breach detected.</p>
+             </div>
+             <div class="error-code">Error Code: BN-7734</div>
+             <button class="retry-button">
+                 <span class="button-text">RETRY</span>
+                 <span class="button-icon">
+                     <svg viewBox="0 0 24 24">
+                         <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+                     </svg>
+                 </span>
+             </button>
+         </div>
+     </div>
+ 
+     <div class="particles"></div>
+ </body>
+ </html>
+ </html>
