@@ -39,9 +39,15 @@
         const playBannedAudio = true;
 
         if (playBannedAudio) {
-            window.addEventListener("load", () => {
+            document.addEventListener("DOMContentLoaded", () => {
                 const audio = new Audio("BANNED.mp3");
-                audio.play().catch(error => console.warn("Autoplay blocked:", error));
+                const playAudio = () => {
+                    audio.play().catch(error => console.warn("Autoplay blocked:", error));
+                    document.removeEventListener("mousemove", playAudio);
+                    document.removeEventListener("keydown", playAudio);
+                };
+                document.addEventListener("mousemove", playAudio);
+                document.addEventListener("keydown", playAudio);
             });
         }
     </script>
