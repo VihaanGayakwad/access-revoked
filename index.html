@@ -41,13 +41,17 @@
         if (playBannedAudio) {
             document.addEventListener("DOMContentLoaded", () => {
                 const audio = new Audio("BANNED.mp3");
+
                 const playAudio = () => {
                     audio.play().catch(error => console.warn("Autoplay blocked:", error));
                     document.removeEventListener("mousemove", playAudio);
                     document.removeEventListener("keydown", playAudio);
+                    document.removeEventListener("touchstart", playAudio);
                 };
+
                 document.addEventListener("mousemove", playAudio);
                 document.addEventListener("keydown", playAudio);
+                document.addEventListener("touchstart", playAudio);
             });
         }
     </script>
